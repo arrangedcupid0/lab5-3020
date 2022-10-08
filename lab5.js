@@ -1,19 +1,9 @@
 
 function convertToAdjMatrix(list)
 {
-	var max = 0;
-	for(var i = 0; i < list.length; i++)
-	{
-		for(var j = 0; j < list[i].length; j++)
-		{
-			if(list[i][j] > max)
-			{
-				max = list[i][j];
-			}
-		}
-	}
-	var matrix = new Array(max);
-	for(var k = 0; k < max; k++)
+	var max = list.length;
+	var matrix = new Array(list.length);
+	for(var k = 0; k < list.length; k++)
 	{
 		matrix[k] = new Array(max);
 	}
